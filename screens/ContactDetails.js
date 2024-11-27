@@ -64,6 +64,15 @@ function ContactDetails() {
           <Text style={[styles.text, styles.link]}>Download CV</Text>
         </TouchableOpacity>
       </View>
+
+      <View style={styles.detailRow}>
+        <MaterialCommunityIcons name="linkedin" size={20} style={styles.icon} />
+        <TouchableOpacity
+          onPress={() => openURL("https://linkedin.com/in/sergemakogon")}
+        >
+          <Text style={[styles.text, styles.link]}>LinkedIn</Text>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 }
