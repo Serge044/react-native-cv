@@ -1,9 +1,32 @@
 import React from "react";
-import { StyleSheet, Text, View, Image, ScrollView } from "react-native";
+import {
+  StyleSheet,
+  Text,
+  View,
+  Image,
+  ScrollView,
+  TouchableOpacity,
+  Linking,
+  useColorScheme,
+} from "react-native";
+import Icon from "react-native-vector-icons/FontAwesome";
 
 function AboutMe() {
+  const colorScheme = useColorScheme();
+
+  const openLink = (url) => {
+    Linking.openURL(url).catch((err) =>
+      console.error("An error occurred", err)
+    );
+  };
+
   return (
-    <ScrollView contentContainerStyle={styles.container}>
+    <ScrollView
+      contentContainerStyle={{
+        ...styles.container,
+        backgroundColor: colorScheme === "dark" ? "#1e1e1e" : "#fff",
+      }}
+    >
       <View style={styles.header}>
         <View style={styles.imageWrapper}>
           <Image source={require("../images/Serge.jpg")} style={styles.image} />
@@ -12,6 +35,24 @@ function AboutMe() {
           <Text style={styles.name}>SERHII MAKOHON</Text>
           <Text style={styles.role}>FRONT END DEVELOPER</Text>
         </View>
+      </View>
+
+      <View style={styles.socialIcons}>
+        <TouchableOpacity
+          onPress={() => openLink("https://github.com/Serge044")}
+        >
+          <Icon name="github" size={30} color="#000" />
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => openLink("https://linkedin.com/in/sergemakogon")}
+        >
+          <Icon
+            name="linkedin"
+            size={30}
+            color="#000"
+            style={styles.iconMargin}
+          />
+        </TouchableOpacity>
       </View>
 
       <View style={styles.aboutMeSection}>
@@ -41,6 +82,7 @@ const styles = StyleSheet.create({
   container: {
     flexGrow: 1,
     backgroundColor: "#fff",
+    justifyContent: "center",
     padding: 20,
   },
   header: {
@@ -70,6 +112,14 @@ const styles = StyleSheet.create({
   role: {
     fontSize: 18,
     color: "#333",
+  },
+  socialIcons: {
+    flexDirection: "row",
+    justifyContent: "center",
+    marginBottom: 20,
+  },
+  iconMargin: {
+    marginLeft: 35,
   },
   aboutMeSection: {
     backgroundColor: "#f9f9f9",
