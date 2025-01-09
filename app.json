@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "RN-CV",
-    "slug": "RN-CV",
+    "name": "Serhii Makohon CV",
+    "slug": "Serhii Makohon CV",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "splash": {
       "image": "./assets/splash-icon.png",
@@ -13,9 +13,11 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
+      "buildNumber": "1.0.0",
       "supportsTablet": true
     },
     "android": {
+      "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"

@@ -177,17 +177,15 @@ function WorkExperience() {
       ]}
     >
       <View style={styles.header}>
-        <Text
-          style={[
-            styles.headerText,
-            { color: colorScheme === "dark" ? "#fff" : "#000" },
-          ]}
-        >
-          WORK EXPERIENCE
-        </Text>
+        <Text style={styles.headerText}>WORK EXPERIENCE</Text>
       </View>
 
-      <View style={styles.section}>
+      <View
+        style={[
+          styles.section,
+          { backgroundColor: colorScheme === "dark" ? "#353535" : "#f9f9f9" },
+        ]}
+      >
         <Text
           style={[
             styles.company,
@@ -246,7 +244,12 @@ function WorkExperience() {
         </Text>
       </View>
 
-      <View style={styles.section}>
+      <View
+        style={[
+          styles.section,
+          { backgroundColor: colorScheme === "dark" ? "#353535" : "#f9f9f9" },
+        ]}
+      >
         <Text
           style={[
             styles.company,

@@ -41,7 +41,12 @@ function AboutMe() {
         <TouchableOpacity
           onPress={() => openLink("https://github.com/Serge044")}
         >
-          <Icon name="github" size={30} color="#000" />
+          <Icon
+            name="github"
+            size={30}
+            color="#000"
+            style={{ color: colorScheme === "dark" ? "#fff" : "#000" }}
+          />
         </TouchableOpacity>
         <TouchableOpacity
           onPress={() => openLink("https://linkedin.com/in/sergemakogon")}
@@ -50,23 +55,53 @@ function AboutMe() {
             name="linkedin"
             size={30}
             color="#000"
-            style={styles.iconMargin}
+            style={[
+              styles.iconMargin,
+              { color: colorScheme === "dark" ? "#fff" : "#000" },
+            ]}
           />
         </TouchableOpacity>
       </View>
 
-      <View style={styles.aboutMeSection}>
-        <Text style={styles.sectionTitle}>ABOUT ME</Text>
-        <Text style={styles.paragraph}>
+      <View
+        style={[
+          styles.aboutMeSection,
+          { backgroundColor: colorScheme === "dark" ? "#353535" : "#f9f9f9" },
+        ]}
+      >
+        <Text
+          style={[
+            styles.sectionTitle,
+            { color: colorScheme === "dark" ? "#fff" : "#000" },
+          ]}
+        >
+          ABOUT ME
+        </Text>
+        <Text
+          style={[
+            styles.paragraph,
+            { color: colorScheme === "dark" ? "#ccc" : "#000" },
+          ]}
+        >
           I have over 6 years of experience in IT. I am a team player who values
           collaboration, but also works effectively independently. In my free
           time, I volunteer, ride a bike and a motorcycle.
         </Text>
-        <Text style={styles.paragraph}>
+        <Text
+          style={[
+            styles.paragraph,
+            { color: colorScheme === "dark" ? "#ccc" : "#000" },
+          ]}
+        >
           I am looking for a Front-End developer position to apply my knowledge
           and experience in creating quality interfaces.
         </Text>
-        <Text style={styles.paragraph}>
+        <Text
+          style={[
+            styles.paragraph,
+            { color: colorScheme === "dark" ? "#ccc" : "#000" },
+          ]}
+        >
           My main stack: HTML, CSS, JavaScript, React and TypeScript. I am ready
           for new challenges and strive to achieve high results together with
           your team, so let's collaborate together ;)

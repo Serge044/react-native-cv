@@ -139,17 +139,15 @@ function SkillsAndExpertise() {
       ]}
     >
       <View style={styles.header}>
-        <Text
-          style={[
-            styles.headerText,
-            { color: colorScheme === "dark" ? "#fff" : "#000" },
-          ]}
-        >
-          SKILLS AND EXPERTISE
-        </Text>
+        <Text style={styles.headerText}>SKILLS AND EXPERTISE</Text>
       </View>
 
-      <View style={styles.section}>
+      <View
+        style={[
+          styles.section,
+          { backgroundColor: colorScheme === "dark" ? "#353535" : "#f9f9f9" },
+        ]}
+      >
         <Text
           style={[
             styles.subheader,
@@ -168,7 +166,12 @@ function SkillsAndExpertise() {
         </Text>
       </View>
 
-      <View style={styles.section}>
+      <View
+        style={[
+          styles.section,
+          { backgroundColor: colorScheme === "dark" ? "#353535" : "#f9f9f9" },
+        ]}
+      >
         <Text
           style={[
             styles.subheader,
@@ -187,7 +190,12 @@ function SkillsAndExpertise() {
         </Text>
       </View>
 
-      <View style={styles.section}>
+      <View
+        style={[
+          styles.section,
+          { backgroundColor: colorScheme === "dark" ? "#353535" : "#f9f9f9" },
+        ]}
+      >
         <Text
           style={[
             styles.subheader,
@@ -206,7 +214,12 @@ function SkillsAndExpertise() {
         </Text>
       </View>
 
-      <View style={styles.section}>
+      <View
+        style={[
+          styles.section,
+          { backgroundColor: colorScheme === "dark" ? "#353535" : "#f9f9f9" },
+        ]}
+      >
         <Text
           style={[
             styles.subheader,

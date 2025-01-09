@@ -186,19 +186,24 @@ function ContactDetails() {
       ]}
     >
       <View style={styles.header}>
-        <Text
-          style={[
-            styles.headerText,
-            { color: colorScheme === "dark" ? "#fff" : "#000" },
-          ]}
-        >
-          CONTACT DETAILS
-        </Text>
+        <Text style={styles.headerText}>CONTACT DETAILS</Text>
       </View>
 
-      <View style={styles.detailSection}>
+      <View
+        style={[
+          styles.detailSection,
+          { backgroundColor: colorScheme === "dark" ? "#353535" : "#f9f9f9" },
+        ]}
+      >
         <View style={styles.detailRow}>
-          <MaterialIcons name="email" size={20} style={styles.icon} />
+          <MaterialIcons
+            name="email"
+            size={20}
+            style={[
+              styles.icon,
+              { color: colorScheme === "dark" ? "#888" : "#353535" },
+            ]}
+          />
           <TouchableOpacity
             onPress={() => openURL("mailto:serhiima.work@gmail.com")}
           >
@@ -206,7 +211,7 @@ function ContactDetails() {
               style={[
                 styles.text,
                 styles.link,
-                { color: colorScheme === "dark" ? "#bbb" : "#1e90ff" },
+                { color: colorScheme === "dark" ? "#fff" : "#1e90ff" },
               ]}
             >
               serhiima.work@gmail.com
@@ -215,7 +220,14 @@ function ContactDetails() {
         </View>
 
         <View style={styles.detailRow}>
-          <MaterialCommunityIcons name="web" size={20} style={styles.icon} />
+          <MaterialCommunityIcons
+            name="web"
+            size={20}
+            style={[
+              styles.icon,
+              { color: colorScheme === "dark" ? "#888" : "#353535" },
+            ]}
+          />
           <TouchableOpacity
             onPress={() => openURL("https://www.serhii-makohon.site")}
           >
@@ -223,7 +235,7 @@ function ContactDetails() {
               style={[
                 styles.text,
                 styles.link,
-                { color: colorScheme === "dark" ? "#bbb" : "#1e90ff" },
+                { color: colorScheme === "dark" ? "#fff" : "#1e90ff" },
               ]}
             >
               www.serhii-makohon.site
@@ -235,7 +247,10 @@ function ContactDetails() {
           <MaterialCommunityIcons
             name="linkedin"
             size={20}
-            style={styles.icon}
+            style={[
+              styles.icon,
+              { color: colorScheme === "dark" ? "#888" : "#353535" },
+            ]}
           />
           <TouchableOpacity
             onPress={() => openURL("https://linkedin.com/in/sergemakogon")}
@@ -244,7 +259,7 @@ function ContactDetails() {
               style={[
                 styles.text,
                 styles.link,
-                { color: colorScheme === "dark" ? "#bbb" : "#1e90ff" },
+                { color: colorScheme === "dark" ? "#fff" : "#1e90ff" },
               ]}
             >
               LinkedIn
@@ -253,13 +268,20 @@ function ContactDetails() {
         </View>
 
         <View style={styles.detailRow}>
-          <MaterialIcons name="home" size={20} style={styles.icon} />
+          <MaterialIcons
+            name="home"
+            size={20}
+            style={[
+              styles.icon,
+              { color: colorScheme === "dark" ? "#888" : "#353535" },
+            ]}
+          />
           <TouchableOpacity onPress={() => openURL("geo:0,0?q=Kyiv,Ukraine")}>
             <Text
               style={[
                 styles.text,
                 styles.link,
-                { color: colorScheme === "dark" ? "#bbb" : "#1e90ff" },
+                { color: colorScheme === "dark" ? "#fff" : "#1e90ff" },
               ]}
             >
               Kyiv, Ukraine
@@ -271,7 +293,10 @@ function ContactDetails() {
           <MaterialCommunityIcons
             name="file-download"
             size={20}
-            style={styles.icon}
+            style={[
+              styles.icon,
+              { color: colorScheme === "dark" ? "#888" : "#353535" },
+            ]}
           />
           <TouchableOpacity
             onPress={() =>
@@ -284,7 +309,7 @@ function ContactDetails() {
               style={[
                 styles.text,
                 styles.link,
-                { color: colorScheme === "dark" ? "#bbb" : "#1e90ff" },
+                { color: colorScheme === "dark" ? "#fff" : "#1e90ff" },
               ]}
             >
               Download CV
