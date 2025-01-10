@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Serhii Makohon CV",
-    "slug": "Serhii Makohon CV",
+    "slug": "SerhiiMakohonCV",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -14,17 +14,24 @@
     },
     "ios": {
       "buildNumber": "1.0.0",
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.serge044.SerhiiMakohonCV"
     },
     "android": {
       "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.serge044.SerhiiMakohonCV"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "2958a3c0-c9a3-4cf4-bb5f-b00d4a7e67a3"
+      }
     }
   }
 }
